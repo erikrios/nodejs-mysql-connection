@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/erikrios/nodejs-mysql-connection/issues"
   },
-  "homepage": "https://github.com/erikrios/nodejs-mysql-connection#readme"
+  "homepage": "https://github.com/erikrios/nodejs-mysql-connection#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
