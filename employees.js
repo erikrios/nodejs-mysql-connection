@@ -62,3 +62,9 @@ connection.query(sqlSelectRecord, (err, result) => {
     if (err) throw err;
     console.log(result);
 });
+
+var sqlSelectUniqueRecord = "SELECT * FROM employees WHERE id = '1'";
+connection.query(sqlSelectUniqueRecord, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+});
