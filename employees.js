@@ -50,3 +50,15 @@ connection.query(sqlUpdateRecord, (err, result) => {
     if (err) throw err;
     console.log(result.affectedRows + ' record(s) updated');
 });
+
+var sqlDeleteRecord = "DELETE FROM employees WHERE city = 'New York'";
+connection.query(sqlDeleteRecord, (err, result) => {
+    if (err) throw err;
+    console.log('Number of records deleted: ' + result.affectedRows);
+});
+
+var sqlSelectRecord = "SELECT * FROM employees";
+connection.query(sqlSelectRecord, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+});
