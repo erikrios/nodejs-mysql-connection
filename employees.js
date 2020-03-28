@@ -69,7 +69,7 @@ connection.query(sqlSelectUniqueRecord, (err, result) => {
     console.log(result);
 });
 
-var sqlDropTable = "DROP TABLE employee";
+var sqlDropTable = "DROP TABLE employees";
 connection.query(sqlDropTable, (err, result) => {
     if (err) throw err;
     console.log('Table deleted');
