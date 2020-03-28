@@ -44,3 +44,9 @@ connection.query(sqlMultipleInsertRecord, [values], (err, result) => {
     console.log('Number of record inserted: ' + result.affectedRows);
     console.log(result);
 });
+
+var sqlUpdateRecord = "UPDATE employees SET city = 'Mountain View' WHERE city = 'California'";
+connection.query(sqlUpdateRecord, (err, result) => {
+    if (err) throw err;
+    console.log(result.affectedRows + ' record(s) updated');
+});
